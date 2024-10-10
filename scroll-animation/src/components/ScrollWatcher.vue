@@ -1,0 +1,38 @@
+<script setup lang="ts">
+
+</script>
+
+<template>
+
+<div class="scroll-watcher"/>
+
+</template>
+
+<style scoped>
+
+@supports (animation-timeline: view()) {
+    @media screen and (prefers-reduced-motion: no-preference) { 
+
+        .scroll-watcher {
+            height: 10px;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            background-color: lime;
+            width: 100%;
+            scale: 0 1;
+            transform-origin: left;
+            animation: scroll-watcher linear;
+            animation-timeline: scroll();
+        }
+
+        @keyframes scroll-watcher {
+            to {
+                scale: 1 1;
+            }
+        }
+    }
+}
+
+
+</style>

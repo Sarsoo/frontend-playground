@@ -1,6 +1,6 @@
-# Js Playground 
+# Frontend Playground 
 
-Test bed for testing Javascript stuff.
+Test bed for testing Javascript + CSS stuff.
 
 * Typescript stuff
 * Vue
