@@ -84,5 +84,7 @@ const count = ref(0)
 
 .con {
   padding: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 </style>
